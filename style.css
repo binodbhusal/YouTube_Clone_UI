@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Oswald&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-leftcontent a{
+    
+    text-decoration: none;
+    color: black;
+}
+/* -----------------NAV BAR Part----------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    background-color: whitesmoke;
+    height: 60px;
+    padding: 2%;
+    position: sticky;
+}
+.nav-bar-flex{
+   display: flex;
+   align-items: center;
+
+}
+.nav-leftcontent{
+    display: flex;
+    justify-content: start;
+      
+}
+.nav-leftcontent h1{
+ font-family: oswald,sans-serif;
+ color: black;font-size: 1.3rem;
+ 
+}
+.nav-leftcontent .menu-bars{
+    color: black;
+    margin-right: 0.5rem; 
+}
+ .menu-logo{
+    color: red;
+}
+
+
+/* -----------------SIDE BAR PART--------------------- */
+.side-bar{
+    background-color: black;
+    width: 17%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.content.container{
+    background-color: aqua;
+    width: 100%;
+}
+main{
+    display: flex;
+    height: calc(100vh-70px);
+    background-color: blue;
+}
+@media(max-width:768px){
+    .side-bar{
+        display: none;
+    }
+}
+.nav-left{
+    display: flex;
+    justify-content: start;
+}
+.nav-left .menu-logo{
+   
+    margin-right: 1.2rem;
+    font-size: 1.3rem;
+}
+.nav-left h1{
+    font-family: Oswald,sans-serif;
+    color: black; font-size: 1.3rem;
+    cursor: pointer;
+    
+    }
+    #youtube-logo{
+    padding : 0.2rem;
+    font-size: 1.5rem;
+    color:red;
+    
