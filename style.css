@@ -104,11 +104,73 @@ nav{
 
 /* -----------------SIDE BAR PART--------------------- */
 .side-bar{
-    background-color: black;
     width: 17%;
-    height: 100%;
+    background-color:whitesmoke;
+    height: 100vh;
     overflow-y: scroll;
+    padding-top: 38px;
+    padding-left: 1.80rem;   
+   
 }
+.side-bar .sidebar-section img{
+    width: 1.5rem;
+   
+    
+    
+   
+
+}
+.sidebar-section p{
+    margin-left: 14px;
+    font-family: arial,sans-serif;
+    font-size: 0.85rem;
+    padding: 0.2rem;
+    
+}
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-section a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+.side-bar h3{
+    font-size: 0.98rem;
+    font-weight:500;
+    padding: 0.90rem;
+}
+.side-bar hr{
+    
+   width: 90%;
+   border: 0;
+   height: 1px;
+   background: #ccc;
+  margin: 10px;
+}
+.side-bar .about p{
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: normal;
+    padding-right: 2.1rem;
+   
+}
+footer{
+    font-size: 0.70rem;
+    color: #6B728E;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+ .sidebar-section .subscriptions{
+    border-radius: 50%;
+}
+/* -----------------Main Content-Container-------------------- */
 .content.container{
     background-color: aqua;
     width: 100%;
