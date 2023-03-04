@@ -8,12 +8,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav-leftcontent a{
-    
+a{
+    cursor: pointer;
     text-decoration: none;
     color: black;
 }
-/* -----------------NAV BAR Part----------------------------- */
+/* ---------------LEFT--NAV BAR Part----------------------------- */
 nav{
     display: flex;
     align-items: center;
@@ -30,48 +30,9 @@ nav{
 
 }
 .nav-leftcontent{
-    display: flex;
+    display: inline-flexbox;
     justify-content: start;
       
-}
-.nav-leftcontent h1{
- font-family: oswald,sans-serif;
- color: black;font-size: 1.3rem;
- 
-}
-.nav-leftcontent .menu-bars{
-    color: black;
-    margin-right: 0.5rem; 
-}
- .menu-logo{
-    color: red;
-}
-
-
-/* -----------------SIDE BAR PART--------------------- */
-.side-bar{
-    background-color: black;
-    width: 17%;
-    height: 100%;
-    overflow-y: scroll;
-}
-.content.container{
-    background-color: aqua;
-    width: 100%;
-}
-main{
-    display: flex;
-    height: calc(100vh-70px);
-    background-color: blue;
-}
-@media(max-width:768px){
-    .side-bar{
-        display: none;
-    }
-}
-.nav-left{
-    display: flex;
-    justify-content: start;
 }
 .nav-left .menu-logo{
    
@@ -86,6 +47,324 @@ main{
     }
     #youtube-logo{
     padding : 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color:red;
+    }
+.nav-leftcontent h1{
+ font-family: oswald,sans-serif;
+ color: black;font-size: 1.3rem;
+ 
+}
+.nav-leftcontent .menu-bars{
+    color: black;
+    margin-right: 0.5rem; 
+}
+ .menu-logo{
+    color: red;
+}
+/* -----------------MIDDLE NAV BAR PART------------------- */
+.nav-middlecontent{
+    display: flex;
+   
+}
+.search-box{
+    height: 100%;
+    display: flex;
+}
+.nav-middlecontent  .search-box input {
+   border-right: 1px solid #ccc;
+   border-bottom: 0;
+   border-top: 0;
+   border-left: 0;
+    font-size: 16px;
+    padding: 5px;
+    width: 550px;
+    height: 100%;
+    outline: 0;
+    border-radius: 20px 0 0 20px;
+
+}
+.search-box button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 50px;
     
+}
+.nav-middlecontent form{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    height: 40px;
+    margin-right:1rem;
+}  
+
+/*---------------------------Nav-Right--Bar------------------------------- -- */
+
+.nav-rightcontent{
+    display: flex;
+    
+}
+.nav-rightcontent img{
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 40px;
+   
+}
+.nav-rightcontent .bell-icon{
+    margin-left: 30px;
+    font-size: 1.3rem;
+}
+.nav-left{
+    display: flex;
+    justify-content: start;
+}
+
+
+/* -----------------SIDE BAR PART--------------------- */
+.sidebar-section1{
+    width: 18%;
+    background-color:whitesmoke;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    padding-left: 1.80rem; 
+}
+
+.side-bar{
+    width: 17%;
+   
+    background-color:whitesmoke;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 60px;
+    padding-left: 1.80rem; 
+    /* position:fixed; */
+    /* left: -100%; */
+    transition: 850ms;
+    float: left;
+     
+}
+.sidebar-show{
+    display: none;
+    
+}
+.side-bar .sidebar-section img{
+    width: 1.5rem;
+}
+.sidebar-section p{
+    margin-left: 14px;
+    font-family: arial,sans-serif;
+    font-size: 0.85rem;
+    padding: 0.2rem;
+    
+}
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sidebar-section a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    
+}
+.hidemenubar{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.side-bar h3{
+    font-size: 0.98rem;
+    font-weight:500;
+    padding: 0.90rem;
+}
+.side-bar hr{
+    
+   width: 90%;
+   border: 0;
+   height: 1px;
+   background: #ccc;
+  margin: 10px;
+}
+.side-bar .about p{
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: normal;
+    padding-right: 2.1rem;
+   
+}
+ .short-section img{
+    width: 1.5rem;
+    padding-top: 1rem;
+   margin-bottom: 2px;
+   display: block;
+   margin: 0 auto;
+   text-align: justify;
+}
+.sidebar-section1 {
+    width: 90px;
+    height: 100vh;
+    
+}
+.sidebar-section1 p {
+   font-size: 0.82rem;
+   margin-left: 0;
+   padding-left: 0;
+}
+.sidebar-section1 a {
+  text-align: left;
+  
+ }
+
+
+footer{
+    font-size: 0.70rem;
+    color: #6B728E;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+ .sidebar-section .subscriptions{
+    border-radius: 50%;
+}
+/* -----------------Main Content-Container-------------------- */
+.container{
+    background: white;
+    padding-left: 3%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+  }
+  .list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap:16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+  }
+  .vid-list .thumbnail{
+    width: 100%;
+    border-radius: 5%;
+    margin-left: 12px;
+   }
+   .vid-list .nav-bar-flex{
+    align-items: flex-start;
+    margin-top: 7px;
+   }
+   .vid-list .nav-bar-flex img{
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+    width: 35px;
+    margin-left: 12px;
+   }
+   .vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+   
+   }
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+   
+    display: block;
+}
+@media(max-width:900px){
+    .side-bar{
+        display: none;
+    }
+    nav{
+      
+        padding-left: 5%;
+       
+    }
+    
+    .nav-rightcontent i, .video-icon{
+        display: none;
+    }
+    
+    .container{
+        padding-right: 7%;
+    }
+    #youtubebar{
+       
+        display: flex;
+    }
+    #search{
+        width: 250px;
+        margin-left: 30px;
+     
+    }
+    .nav-middlecontent .mic-icon{
+        display: none;
+    }
+    .nav-rightcontent #user-icon{
+        width: 100px;
+    }
+    #yout{
+        display: none;
+    }
+    .nav-middlecontent{
+        margin-left: 30px;
+        margin-right:0;
+    }
+   
+}
+
+/* ----------------Play-video-----Page------------------------------- */
+.play-video-container{
+    padding-left: 7%;
+    padding-top: 3%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1-play-video{
+  flex-basis: 70%;
+}
+.col2-right-side-bar{
+    flex-basis: 30%;
+  
+}
+.col1-play-video video{
+    width: 100%;
+}
+.side-video-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.side-video-list img{
+    width: 100%;
+}
+.side-video-list .small-thumbnail{
+flex-basis: 40%;
+}
+.side-video-list .vid-info{
+    flex-basis: 59%;
+}
+.col1-play-video h3{
+    margin-top: 10px;
+}
+.video-bar{
+    background: whitesmoke;
+    height: 50px;
+    width: 100%;
+}
+.thumbnail1{
+    width: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+
+

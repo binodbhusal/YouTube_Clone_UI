@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,36 +13,230 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!---------------------------Nav Menu Bar------------------------------- -->
+<!---------------------------Nav Menu---Left Bar------------------------------- -->
     <nav class="nav-bar-flex">
         <div class="nav-leftcontent nav-bar-flex">
-            <h1> <a href="#"><i class="fa-solid fa-bars menu-bars"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube menu-logo youtube-logo"></i>YouTube</h1></a>
+            <h1> <a href="#" id="show-menu"><i class="fa-solid fa-bars menu-bars"></i></a>
+            <a href="#" id="youtubebar"><i class="fa-brands fa-youtube menu-logo youtube-logo"></i><span id="yout"> YouTube</span></h1></a>
 
         </div>
+    <!---------------------------Nav-Middle--Bar------------------------------- --> 
         <div class="nav-middlecontent nav-bar-flex">
+            
             <form action="">
-                <input type="text" class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-microphone"></i>
-            </form>
+                <div class="search-box nav-bar-flex">
+                <input type="text" placeholder="Search" id="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+               </form>
+                </div>
+        <a href=""><i class="fa-solid fa-microphone mic-icon"></i></a>
         </div>
+    <!---------------------------Nav-Right--Bar------------------------------- --> 
         <div class="nav-rightcontent nav-bar-flex">
-            <a href=""><span class="material-symbols-outlined">
+            <a href=""><span class="material-symbols-outlined video-icon">
                 video_call
-                </span></a>
-                <a href=""><i class="fa-regular fa-bell"></i></a>
-                <a href=""><img src="images/bin009.jpg" alt=""></a>
+               </span></a>
+                <a href=""><i class="fa-regular fa-bell bell-icon"></i></a>
+                <a href=""><img src="images/bin09.png" alt="" id="usericon"></a>
         </div>
     </nav>
-    
+   <!---------------------------Side---Bar------------------------------- --> 
     <main>
-    <div class="side-bar">.</div>
-    <div class="contet-container">.</div>
+        
+    <div class="side-bar">
+        
+        <!-- <div class="hidemenubar nav-bar-flex nav-leftcontent">
+        <h1> <a href="#"  id="hide-menu"><i class="fa-solid fa-bars menu-bars"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube menu-logo youtube-logo"></i>YouTube</h1></a>
+        </div> -->
+        <div class="sidebar-section">
+            <a href=""><img src="images/home1.png" alt=""><p>Home</p></a>
+            <a href=""><img src="images/YouTube_Shorts.png" alt=""><p>Shorts</p></a>
+            <a href=""><img src="images/subscription.png" alt=""><p>Subscriptions</p></a>
+            <hr>
+            <a href=""><img src="images/library.png" alt=""><p>Library</p></a>
+        </div>
+        <div class="sidebar-section">
+            <a href=""><img src="images/hostory1.png" alt=""><p>History</p></a>
+            <a href=""><img src="images/watchlater.webp" alt=""><p>Watch Later</p></a>
+            <a href=""><img src="images/youtubelike.png" alt=""><p>Liked Videos</p></a>
+            </div>
+            <hr>
+            <h3>Subscriptions</h3>
+            <div class="sidebar-section">
+                <a href=""><img src="images/bin09.png" alt="" class="subscriptions"><p>Binod Bhusal</p></a>
+                <a href=""><img src="images/laxmi.JPG" alt="" class="subscriptions"><p>Laxmi Gautam</p></a>
+                <a href=""><img src="images/Jack.png" alt="" class="subscriptions"><p>Jack Morison</p></a>
+                <a href=""><img src="images/simon.png" alt="" class="subscriptions"><p>Simon Hege</p></a>
+                <a href=""><img src="images/gerard.png" alt="" class="subscriptions"><p>Deepank Bhusal</p></a>
+                <a href=""><img src="images/show-more.png" alt="" class="subscriptions"><p>Show More</p></a>
+            </div>
+            <hr>
+            <h3>Explore</h3>
+            <div class="sidebar-section">
+                <a href=""><img src="images/explore.png" alt=""><p>Trending</p></a>
+                <a href=""><img src="images/musicicon.png" alt=""><p>Music</p></a>
+                <a href=""><img src="images/flimicon.png" alt=""><p>Flim</p></a>
+                <a href=""><img src="images/gaming.webp" alt=""><p>Gaming</p></a>
+                <a href=""><img src="images/sportllogo.png" alt=""><p>Sport</p></a>
+            </div>
+            <hr>
+            <h3>More from YouTube</h3>
+            <div class="sidebar-section">
+                <a href=""><img src="images/youtubelogo.png" alt=""><p>YouTube Premium</p></a>
+                <a href=""><img src="images/creatorstudio.jpeg" alt=""><p>Sport Creator Studio</p></a>
+                <a href=""><img src="images/youtube-music.png" alt=""><p>YouTube Music</p></a>
+                <a href=""><img src="images/youtubekids.png" alt=""><p>YouTube Kids</p></a>
+                <a href=""><img src="images/YouTube-TV.png" alt=""><p>YouTube TV</p></a>
+                <hr>
+                </div>
+                <div class="sidebar-section">
+                    <a href=""><img src="images/settings.png" alt=""><p>Settings</p></a>
+                    <a href=""><img src="images/flag.png" alt=""><p>Report History</p></a>
+                        <a href=""><img src="images/help.png" alt=""><p>Help</p></a>
+                        <a href=""><img src="images/feedback.png" alt=""><p>Send Feedback</p></a>   
+                    </div>
+                    <hr>
+                    <div class="about">
+                        <a href=""><p> About Press Copyright Contact us Creator Advertise Developers</p></a>
+                        
+                        <a href=""><p>Terms Privacy Policy & Safety <br> YouTube works <br> Test new features</p></a>
+                   <a href=""><footer>@Binod Bhusal-2023</footer> </a>
+            </div>
+        </div>
+        <!-- <div class="sidebar-section1">
+            <div class="short-section">
+            <a href=""><img src="images/home1.png" alt=""><p>Home</p></a>
+            <a href=""><img src="images/YouTube_Shorts.png" alt=""><p>Shorts</p></a>
+            <a href=""><img src="images/subscription.png" alt=""><p>Subscriptions</p></a>
+           
+            <a href=""><img src="images/library.png" alt=""><p>Library</p></a>
+        </div>
+    </div> -->
+
+<!---------------------------Content --Main------------------------------- --> 
+<div class="container">
+            
+    <div class="list-container">
+        <div class="vid-list">
+            <a href="play-video.html"><img src="images/thumbnail1.png" class="thumbnail"></a>
+       
+        <div class="nav-bar-flex">
+            <img src="images/bin09.png">
+            <div class="vid-info">
+                <a href="play-video.html">YouTube Clone using HTML&CSS and Java Script</a>
+                <p>Binod Bhusal Channel</p>
+                <p>15k Views &bull; 2 days</p>
+          
+        </div>
+    </div>
     
+    </div>
+    <div class="vid-list">
+        <a href=""><img src="images/thumbnail2.png" class="thumbnail"></a>
+   
+    <div class="nav-bar-flex">
+        <img src="images/bin09.png">
+        <div class="vid-info">
+            <a href="">YouTube Clone using HTML&CSS and Java Script</a>
+            <p>Binod Bhusal Channel</p>
+            <p>15k Views &bull; 2 days</p>
+      
+    </div>
+</div>
+
+</div>
+<div class="vid-list">
+    <a href=""><img src="images/thumbnail3.png" class="thumbnail"></a>
+
+<div class="nav-bar-flex">
+    <img src="images/tom.png">
+    <div class="vid-info">
+        <a href="">Adventures Travell Matters</a>
+        <p>NepTube</p>
+        <p>20k Views &bull; 4 days</p>
+  
+</div>
+</div>
+
+</div>
+<div class="vid-list">
+    <a href=""><img src="images/thumbnail6.png" class="thumbnail"></a>
+
+<div class="nav-bar-flex">
+    <img src="images/laxmi.JPG">
+    <div class="vid-info">
+        <a href="">Adventure Travel to Maountains</a>
+        <p>LaxmiGautamTube</p>
+        <p>50k Views &bull; 20 days</p>
+  
+</div>
+</div>
+
+</div>
+<div class="vid-list">
+    <a href=""><img src="images/thumbnail5.png" class="thumbnail"></a>
+
+<div class="nav-bar-flex">
+    <img src="images/bin09.png">
+    <div class="vid-info">
+        <a href="">Great Shoping in Europe</a>
+        <p>EuropeTube</p>
+        <p>30k Views &bull; 10 days</p>
+  
+</div>
+</div>
+
+</div>
+
+<div class="vid-list">
+    <a href=""><img src="images/thumbnail7.png" class="thumbnail"></a>
+
+<div class="nav-bar-flex">
+    <img src="images/bin09.png">
+    <div class="vid-info">
+        <a href="">YouTube Clone using HTML&CSS and Java Script</a>
+        <p>Binod Bhusal Channel</p>
+        <p>15k Views &bull; 2 days</p>
+  
+</div>
+</div>
+
+</div>
+<div class="vid-list">
+    <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
+
+<div class="nav-bar-flex">
+    <img src="images/laxmi.JPG">
+    <div class="vid-info">
+        <a href="">YouTube Clone using HTML&CSS and Java Script</a>
+        <p>Binod Bhusal Channel</p>
+        <p>15k Views &bull; 2 days</p>
+  
+</div>
+</div>
+
+</div>
+<div class="vid-list">
+    <a href=""><img src="images/thumbnail3.png" class="thumbnail"></a>
+
+<div class="nav-bar-flex">
+    <img src="images/Jack.png">
+    <div class="vid-info">
+        <a href="">YouTube Clone using HTML&CSS and Java Script</a>
+        <p>Binod Bhusal Channel</p>
+        <p>15k Views &bull; 2 days</p>
+  
+</div>
+</div>
+
+</div>
+
+       
+        </div>
 </main>
 
-
+<script src="app.js"></script>
 <script src="https://kit.fontawesome.com/6b06b10d98.js" crossorigin="anonymous"></script>
 </body>
 </html>
